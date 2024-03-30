@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    align-content: center;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+/*Header*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+nav a{
+    font-size: 17px;
+    color: black;
+    margin-left: 2.5rem;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a .active,a:hover{
+    background: rgb(190, 190, 190);
+    transition: .5s;
+    color: white;
+    
+}
+.logo {
+    font-size: 1.8rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: black;
+}
+
+.logo a:hover{
+    background-color: lightgray;
+}
+
+.logo img{
+    width: 40px;
+    margin-left: 0px 15px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
+}
+.toggle{
+    display: none;
+    font-size: 30px;
+}
+
+/*BREAKPOINTS*/
+@media screen and (max-width: 600px){
+    nav{
+        display: block;
+        position: fixed;
+        padding: 15px 20px;
+    }
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+    .menu.active, .toggle{
+        display: block;
+    }
+    .toggle{
+        position: absolute;
+        top: 10px;
+        right: 25px;
+    }
+}
+/*Header*/
+
+/*Inicio*/
+#inicio {
+    position: relative;
+    background-color: aliceblue;
+}
+
+#inicio h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    color:black;
+}
+
+#inicio .boton{
+    display: inline-block;
+    padding: 15px 30px ;
+    color:#713A7D;
+    background-color: transparent;
+    border: 2px solid grey;
+    font-size: 2rem;
+    margin-top: 35px;
+    transition: 3s ease background-color;
+    height: fit-content;
+}
+
+
+#inicio a:hover{
+    background-color: gray;
+    color: white;
+}
+
+/*Inicio*/
+
+/*Acerca*/
+#acerca .container{
+    flex-direction: column;
+/*	text-align: center; */
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+    background-color: #ceedff;
+}
+
+.acerca-start{
+    max-width: 60%;
+	margin: 0 auto;
+}
+
+.acerca-end{
+    display: flex;
+    align-items: center;
+/*	justify-content: center; */
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.acerca-item{
+    
+	display: flex;
+/*	justify-content: center; */
+	flex-direction: column;
+	padding: 1.9%;
+	border-radius: 10px;
+	background-color:#815e89;
+	margin: 15px 15%;
+	position: relative;
+    max-width: 30%;
+    color: white;
+	
+}
+
+.acerca-item h2{
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.acerca-item p{
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.acerca-img {
+    border-radius: 15%;
+    height: auto;
+    max-width: 25%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    float: right;
+    /*padding: 1.5%; */
+
+}
+
+.acerca-start h1{
+    text-align: center;
+    display: block;
+    /*width: fit-content;*/
+    font-size: 2.8rem;
+    color:black;
+}
+
+#acerca .acerca-start p{
+    font-size: 1.2rem;
+    font-family: 'Arial Narrow';
+}
+
+#acerca .acerca-end p, li{
+    font-family: 'Arial Narrow';
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/*Acerca*/
+
+.shape-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 131px;
+}
+
+.shape-divider .shape-fill {
+    fill: #CEEDFF;
+}
