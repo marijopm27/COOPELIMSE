@@ -1,0 +1,81 @@
+/*Acerca-styles*/
+#acerca .container{
+    flex-direction: column;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+    background-color: #c2e7fc;
+}
+.acerca-start{
+    max-width: 60%;
+	margin: 0 auto;
+}
+.acerca-end{
+    display: flex;
+    align-items: center;
+	flex-wrap: wrap;
+	margin-top: 50px;   
+}
+.acerca-item{
+	display: flex;
+	flex-direction: column;
+	padding: 1.9%;
+	border-radius: 10px;
+	background-color:#815e89;
+	margin: 15px 15%;
+	position: relative;
+    max-width: 30%;
+    color: white;	
+}
+.acerca-item h2{
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.acerca-item p{
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.acerca-img {
+    border-radius: 15%;
+    height: auto;
+    max-width: 25%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    float: right;
+}
+.acerca-start h1{
+    text-align: center;
+    display: block;
+    font-size: 2.8rem;
+    color:black;
+}
+#acerca .acerca-start p{
+    font-size: 1.2rem;
+    font-family: 'Arial Narrow';
+}
+#acerca .acerca-end p, li{
+    font-family: 'Arial Narrow';
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.servicios-divider {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.servicios-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 115px;
+}
+
+.servicios-divider .shape-fill {
+    fill: #c2e7fc;
+}
+/* Final Acerca*/

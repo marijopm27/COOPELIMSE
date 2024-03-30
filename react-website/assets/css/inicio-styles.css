@@ -1,0 +1,28 @@
+/*Inicio-styles*/
+#inicio {
+    position: relative;
+    background-color: #1C1F20;
+}
+#inicio h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    color:white;
+}
+#inicio .boton{
+    display: inline-block;
+    padding: 15px 30px ;
+    color:#2e31cd;
+    background-color: transparent;
+    border: 2px solid grey;
+    font-size: 2rem;
+    margin-top: 35px;
+    transition: 3s ease background-color;
+    height: fit-content;
+}
+#inicio a:hover{
+    background-color: gray;
+    color: white;
+}
+
+/* FIN Inicio*/

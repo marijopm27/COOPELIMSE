@@ -1,0 +1,136 @@
+
+/*servicios-styles*/
+#servicios .container{
+    flex-direction: column;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+    background-color: #dff0fa;
+}
+.servicios-start{
+    max-width: 60%;
+	margin: 0 auto;
+}
+#servicios .servicios-start p{
+    font-size: 1.2rem;
+    font-family: 'Arial Narrow';
+}
+.servicios-start h1{
+    text-align: center;
+    display: block;
+    font-size: 2.8rem;
+    color:black;
+}
+.servicios-end{
+    display: flex;
+    align-items: center;
+	flex-wrap: wrap;
+    margin: 50px;
+}
+.servicios-item{
+	display: flex;
+	flex-direction: column;
+	padding: 1.9%;
+	border-radius: 10px;
+	background-color:#815e89;
+	margin: 15px 15%;
+	position: relative;
+    max-width: 30%;
+    color: white;
+}
+.servicios-item h2{
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.servicios-item p{
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-bottom: 5px;
+}
+
+/* Servicios - Carrusel */
+/* Estilos para el contenedor del carrusel */
+.carousel-container {
+    overflow: hidden; /* Ocultar el desbordamiento de contenido */
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto;
+    max-width: 25%; /* Ancho máximo de las imágenes */
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    display: flex; /* Mostrar las imágenes en una fila */
+    animation: desplazamiento 10s linear infinite; /* Animación para desplazar las imágenes */
+}
+
+/* Establecer el tamaño de las imágenes */
+
+.carousel img {
+    width: 300px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+
+.carousel img:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* Animación para desplazar el carrusel */
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(0); /* Comenzar desde la posición inicial */
+    }
+    100% {
+        transform: translateX(-100%); /* Desplazar completamente a la izquierda */
+    }
+}
+
+
+/* Estilo para las viñetas en la sección de servicios */
+.servicios-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 1.9%;
+    border-radius: 10px;
+    background-color: #815e89;
+    margin: 15px 15%;
+    position: relative;
+    max-width: 30%;
+    color: white;
+    margin-bottom: 20px; /* Agrega espacio entre los elementos */
+}
+.servicios-item ul {
+    content: "\2022"; /* Utiliza un círculo como viñeta */
+    color: white; /* Color de las viñetas */
+    font-size: 20px; /* Tamaño de las viñetas */
+    margin-right: 10px; /* Espaciado entre las viñetas y el texto */
+}
+.servicios-contacto-divider {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.servicios-contacto-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 49px;
+}
+
+.servicios-contacto-divider .shape-fill {
+    fill: #dff0fa;
+}
+
